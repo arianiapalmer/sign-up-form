@@ -1,6 +1,8 @@
 :root{
     --def-padding: 15px;
     --txt-clr: white;
+    /* --txt-clr: #C6C1E2; */
+
     --color-1:#D1602A;
     --color-2: #C6C1E2;
     --color-3: #842C32;
@@ -19,10 +21,13 @@ img{
     height: var(--lheight);
 }
 #left{
-    /* max-width: 35vw; */
     width: var(--lwidth);
     height: var(--lheight);
-    font-family: 'MuseoModerno', cursive;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: .55rem;
+    /* font-family: 'MuseoModerno', cursive; */
+    /* font-family: 'Reenie Beanie', cursive; */
+    /* font-family: 'Nova Mono', monospace; */
     font-size: 3rem;
     color:var(--txt-clr);
     text-align: center;
@@ -33,7 +38,7 @@ img{
     top: 130px;
     width: var(--lwidth);
     padding: var(--def-padding) 0px;
-    background-color: rgba(0, 0, 0, 0.664);
+    background-color: rgba(0, 0, 0, 0.517);
     justify-content: center;
 }
 .icon img{
@@ -48,7 +53,7 @@ p{
 }
 p em{
     font-style: italic;
-    padding-right: 2px;
+    padding-right: 3px;
 }
 label{
     padding: 1px 0;
@@ -63,6 +68,9 @@ label{
     width: var(--rwidth);
 
 }
+.blurb{
+    margin-top: 100px;
+}
 form{
     display: grid;
     padding: var(--def-padding);
@@ -72,4 +80,16 @@ form{
 }
 input{
     width: 150px;
+}
+button{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--color-1);
+    margin: 10px;
+    color: white;
+    &:hover{
+        background-color: var(--color-4);
+    }
 }
