@@ -8,7 +8,7 @@
     --color-5: #031D40;
     --lwidth: clamp(300px, 35vw, 400px);
     --lheight: 100vh;
-    --rwidth: 65vw;
+    --rwidth: 100vw;
     --rheight:100vh;
 }
 .content{
