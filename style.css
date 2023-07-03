@@ -1,3 +1,71 @@
-.logo{
-    font-family: 'Press Start 2P', cursive;
+:root{
+    --def-padding: 15px;
+    --txt-clr: white;
+    --color-1:#D1602A;
+    --color-2: #C6C1E2;
+    --color-3: #842C32;
+    --color-4: #1F6FC6;
+    --color-5: #031D40;
+    --lwidth: clamp(300px, 35vw, 400px);
+    --lheight: 100vh;
+    --rwidth: 65vw;
+    --rheight:100vh;
+}
+.content{
+    display: flex;
+}
+img{
+    width: var(--lwidth);
+    height: var(--lheight);
+}
+#left{
+    /* max-width: 35vw; */
+    width: var(--lwidth);
+    height: var(--lheight);
+    font-family: 'MuseoModerno', cursive;
+    font-size: 3rem;
+    color:var(--txt-clr);
+    text-align: center;
+}
+.icon{
+    display: flex;
+    position: absolute;
+    top: 100px;
+    width: var(--lwidth);
+    padding: var(--def-padding) 0px;
+    background-color: rgba(0, 0, 0, 0.664);
+    justify-content: center;
+}
+.icon img{
+    height: 50px;
+    width: 50px;
+    padding: 0 15px 0 0;
+}
+p{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    padding: var(--def-padding);
+}
+label{
+    padding: 1px 0;
+    font-weight: 50;
+    font-family: 'Bebas Neue', sans-serif;
+    /* background-color: rgba(255, 255, 255, 0.346); */
+
+}
+#right{
+    color: var(--txt-clr);
+    background-color: var(--color-5);
+    width: var(--rwidth);
+
+}
+form{
+    display: grid;
+    padding: var(--def-padding);
+    background-color: var(--color-2);
+    color: var(--color-1);
+    box-shadow: black;
+}
+input{
+    width: 150px;
 }
